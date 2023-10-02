@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="15" name="Test1">
+ <parameter name="Browser" value="ChromeBrowser"></parameter>
+    <classes>
+      <class name="org.task.CrossBrowserClass"/>   
+      </classes>
+  </test> 
+  
+    <test thread-count="15" name="Test2">
+ <parameter name="Browser" value="EdgeBrowser"></parameter>
+    <classes>
+      <class name="org.task.CrossBrowserClass"/>
+ 
+    </classes>
+  </test> 
+  
+    <test thread-count="15"  name="Test3">
+ <parameter name="Browser" value="FirefoxBrowser"></parameter>
+    <classes>
+      <class name="org.task.CrossBrowserClass"/>    </classes>
+  </test> 
+</suite> 
